@@ -1,0 +1,20 @@
+<td align="left" class="txtPagina">Observação<br />
+	<textarea onkeypress="javascript: return limitaCaracteres('obs',295)" id="obs" class="formulario"     rows="3"    cols="35" style="width:315px;" name="planoDeContas.obs">${planoDeContas.obs}</textarea>
+</td>
+/**
+ * Limita aquantidade de caracteres de um elemento, o qual seu ID é recebido no parámetro
+ * @param {Object} id - é o ID do elemento que está sendo usado
+ * @param {Object} numCaracteres - número de caracteres máximo permitido
+ */
+<script type="text/javascript">
+	
+	function limitaCaracteres(id, numCaracteres){
+	valor = document.getElementById(id).value;
+	if(valor.length>=numCaracteres){
+		alert("mais que "+numCaracteres);
+		return false;			
+	}else{
+		return true;
+	}
+}
+</script>

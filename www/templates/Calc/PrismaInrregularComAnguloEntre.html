@@ -1,0 +1,37 @@
+<br>
+<h5 class="header center" id="titulo">Área do Prisma com valor de 2 lados e angulo entre eles</h5>
+<div class="content" id="texto">
+  
+        <form name="calcform" method="post" action="">
+           <fieldset>
+                
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Lado A" name="LadoA" id="LadoA" class="validate" min="1" step="0.01"/>
+                            <label for="LadoA">Lado A</label>
+                         </div>
+                </div>
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Lado B" name="LadoB" id="LadoB" class="validate" min="1" step="0.01"/>
+                            <label for="LadoB">Lado B</label>
+                         </div>
+                </div>
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="angulo" name="angulo" id="angulo" class="validate" min="1" step="0.01"/>
+                            <label for="angulo">Angulo</label>
+                         </div>
+                </div>
+
+              <label for="res">Resultado:</label>
+              <input  type="text" name="res" id="res" />
+
+              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalPrisma2ladosAgulo(document.calcform.value)">Calcular</a>
+              <a id="botao" class="waves-effect waves-light btn" value="Limpar" onClick="location.reload();">Limpar</a>
+           </fieldset>  
+        </form>                   
+</div>
+
+
+  

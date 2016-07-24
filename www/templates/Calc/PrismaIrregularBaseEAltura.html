@@ -1,0 +1,31 @@
+<br>
+<h5 class="header center" id="titulo"> Área do Prisma com valor da base e altura</h5>
+<div class="content" id="texto">
+  
+        <form name="calcform" method="post" action="">
+           <fieldset>
+                
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Base" name="Base" id="Base" class="validate" min="1" step="0.01"/>
+                            <label for="Base">Base</label>
+                         </div>
+                </div>
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Altura" name="Altura" id="Altura" class="validate" min="1" step="0.01"/>
+                            <label for="Altura">Altura</label>
+                         </div>
+                </div>
+
+              <label for="res">Resultado:</label>
+              <input  type="text" name="res" id="res" />
+
+              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalPrismaBaseEAltura(document.calcform.value)">Calcular</a>
+              <a id="botao" class="waves-effect waves-light btn" value="Limpar" onClick="location.reload();">Limpar</a>
+           </fieldset>  
+        </form>                   
+</div>
+
+
+  

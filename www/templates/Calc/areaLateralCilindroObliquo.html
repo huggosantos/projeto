@@ -1,0 +1,40 @@
+<br>
+<h5 class="header center" id="titulo">Área da Lateral Cilindro Oblíquo</h5>
+<div class="content" id="texto">
+  
+        <form name="calcform" method="post" action="">
+           <fieldset>
+                
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Ângulo:" name="angulo" id="angulo" class="validate" min="1" step="0.01" />
+                            <label for="angulo">Ângulo:</label>
+                         </div>
+                </div>
+                 <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Geratriz:" name="geratriz" id="geratriz" class="validate" min="1" step="0.01" />
+                            <label for="geratriz">Geratriz:</label>
+                         </div>
+                </div>
+            
+
+              <label for="res">Resultado:</label>
+              <input  type="text" name="res" id="res" />
+
+              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalCilindroAreaLateralObliquo(document.calcform.value)">Calcular</a>
+              <input type="reset" id="botao" class="waves-effect waves-light btn" value="Limpar" />
+                
+           </fieldset>  
+        </form>   
+        <h5 class="header center" id="titulo">Cilindro :</h5>
+
+         <a id="butoonEstilo"  class="waves-effect waves-teal btn-flat" href="#areaBaseCilindro" onclick="toTop();">Árera da Base</a>
+         <a id="butoonEstilo"  class="waves-effect waves-teal btn-flat" href="#areaLateralCilindroReto" onclick="toTop();">Árera da Lateral Reto</a>
+        
+
+</div>
+
+
+  
+  

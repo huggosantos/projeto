@@ -1,0 +1,37 @@
+<br>
+<h5 class="header center" id="titulo">Prisma Inregular Com a Medida dos 3 lados</h5>
+<div class="content" id="texto">
+  
+        <form name="calcform" method="post" action="">
+           <fieldset>
+                
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input required="required" placeholder="Valor lado A" name="LadoA" id="LadoA"  type="number"  step="0.01"  class="validate" min="1" style=" width:125%; "/>
+                            <label for="LadoA">Valor lado A </label>
+                         </div>
+                </div>
+                 <div class="row">
+                        <div class="input-field col s6">
+                            <input required="required" placeholder="Valor lado B" name="LadoB" id="LadoB"  type="number"  step="0.01"  class="validate" min="1" style=" width:125%; "/>
+                            <label for="LadoB">Valor lado B </label>
+                         </div>
+                </div>
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input required="required" placeholder="Valor lado C" name="LadoC" id="LadoC"  type="number"  step="0.01"  class="validate" min="1" style=" width:125%; "/>
+                            <label for="LadoC">Valor lado C </label>
+                         </div>
+                </div>
+
+              <label for="res">Resultado:</label>
+              <input  type="text" name="res" id="res" />
+
+              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalPrismaIrregularComMedidaDos3lados(document.calcform.value)">Calcular</a>
+              <a id="botao" class="waves-effect waves-light btn" value="Limpar" onClick="location.reload();">Limpar</a>
+           </fieldset>  
+        </form> 	            		
+</div>
+
+
+  

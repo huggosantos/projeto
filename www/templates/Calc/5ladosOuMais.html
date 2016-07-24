@@ -1,0 +1,31 @@
+<br>
+<h5 class="header center" id="titulo">Prisma de 5 Lados ou mais</h5>
+<div class="content" id="texto">
+  
+        <form name="calcform" method="post" action="">
+           <fieldset>
+                
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input required="required" placeholder="Nº lados do prisma:" name="NumerodeLados" id="NumerodeLados"  type="number" class="validate" min="5" style=" width:125%; "/>
+                            <label for="NumerodeLados">Nº lados do prisma:</label>
+                         </div>
+                </div>
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Aresta da base" name="ArestadaBase" id="ArestadaBase" class="validate" min="1" step="0.01"/>
+                            <label for="ArestadaBase">Aresta da base:</label>
+                         </div>
+                </div>
+
+              <label for="res">Resultado:</label>
+              <input  type="text" name="res" id="res" />
+
+              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="Dados5(document.calcform.value)">Calcular</a>
+              <input type="reset" id="botao" class="waves-effect waves-light btn" value="Limpar" />
+           </fieldset>  
+        </form> 	            		
+</div>
+
+
+  

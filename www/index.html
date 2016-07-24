@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/mui.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+        <!-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-->
+      
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+       <link type="text/css" rel="stylesheet" href="css/estilo.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Modelo App Material Design</title>
+    </head>
+    <body ng-app="myApp">
+     
+    
+    
+        <!-- Sobra MenuLeft -->
+        <span onclick="btnLeftOut();" style="display:none;" id="sombra-menu" class="sombra-menu"></span>
+        <!-- Sobra MenuLeft -->
+    
+        
+  <nav id="BarraFixa">      
+  <ul id="slide-out" class="side-nav">
+  <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Começando<i class="mdi-navigation-arrow-drop-down"></i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#cad" onclick="$('.button-collapse').sideNav('hide');">Poliedros</a></li>
+                <li><a href="#RelaEuler" onclick="$('.button-collapse').sideNav('hide');">Relação de Euler</a></li>
+                <li><a href="#poliedrosPlatao" onclick="$('.button-collapse').sideNav('hide');">Poliedros de Platão</a></li>
+                <li><a href="#poliedrosRegulares"  onclick="$('.button-collapse').sideNav('hide');">Poliedros Regulares</a></li>
+                <li><a href="#prisma" onclick="$('.button-collapse').sideNav('hide');">Prisma</a></li>
+                <li><a href="#Paralelepipedo" onclick="$('.button-collapse').sideNav('hide');">Paralelepípedo</a></li>
+                <li><a href="#cubo" onclick="$('.button-collapse').sideNav('hide');">Cubo</a></li>
+                <li><a href="#piramide" onclick="$('.button-collapse').sideNav('hide');">Pirâmide</a></li>
+                <li><a href="#cilindro" onclick="$('.button-collapse').sideNav('hide');">Cilindro</a></li>
+                <li><a href="#cone" onclick="$('.button-collapse').sideNav('hide');">Cone</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+   
+     <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Calculadora<i class="mdi-navigation-arrow-drop-down"></i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+
+                    <li class="no-padding">
+                         <ul class="collapsible collapsible-accordion">
+                             <li>
+                               <a class="collapsible-header" style="color:#26a69a;">Prisma<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                <div class="collapsible-body">
+                                  <ul>
+                                    <li>
+                                         
+
+                                       <li class="no-padding" style="border:solid 0px;">
+                                          <ul class="collapsible collapsible-accordion">
+                                            <li>
+                                              <a class="collapsible-header" style="color:#484444;">Area da Base<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                                <div class="collapsible-body">
+                                                  <ul>
+                                                                                                                
+
+
+                                                    <li class="no-padding" id="menuDrop">
+                                                       <ul class="collapsible collapsible-accordion">
+                                                          <li>
+                                                              <a class="collapsible-header" style="color:#26a69a;">3 lados<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                                                <div class="collapsible-body">
+                                                                    <ul>
+                                                                        <li><a href="#3ladosRegular" onclick="$('.button-collapse').sideNav('hide');" style="color:#26a69a;">Regular</a></li>
+                                                                            <li>
+                                                                                  
+                                                                              <li class="no-padding" style="border:solid 0px;">
+                                                                                 <ul class="collapsible collapsible-accordion">
+                                                                                    <li>
+                                                                                        <a class="collapsible-header" style="color:#26a69a;">Inregular<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                                                                        <div class="collapsible-body">
+                                                                                            <ul>
+                                                                                                <li><a href="#3ladosIrregularComMedidaDos3lados" onclick="$('.button-collapse').sideNav('hide');" style="color:#26a69a;">Medida dos 3 lados</a></li>
+                                                                                                <li><a href="#PrismaIrregularBaseEAltura" onclick="$('.button-collapse').sideNav('hide');" style="color:#26a69a;">Valor da Base e da Altura</a></li>
+                                                                                                <li><a href="#PrismaInrregularComAnguloEntre" onclick="$('.button-collapse').sideNav('hide');" style="color:#26a69a;">2 lados e o ângulo entre</a></li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                              </li> 
+
+                                                                            </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                              
+                                                    <li class="no-padding" style="border:solid 0px;">
+                                                        <ul class="collapsible collapsible-accordion">
+                                                            <li>
+                                                                <a class="collapsible-header" style="color:#26a69a;">4 lados<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                                                <div class="collapsible-body">
+                                                                    <ul>
+                                                                        <li><a href="#4ladosRegularPrisma" onclick="$('.button-collapse').sideNav('hide');" style="color:#26a69a;">Regular</a></li>
+                                                                        <li>
+
+                                                                           <li class="no-padding" style="border:solid 0px;">
+                                                                              <ul class="collapsible collapsible-accordion">
+                                                                                  <li>
+                                                                                      <a class="collapsible-header" style="color:#26a69a;">Irregular<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                                                                      <div class="collapsible-body">
+                                                                                          <ul>
+                                                                                              <li><a href="#Paralelogramo" onclick="$('.button-collapse').sideNav('hide');" style="color:#26a69a;">Paralelogramo</a></li>
+                                                                                              <li><a href="#trapezio" onclick="$('.button-collapse').sideNav('hide');" style="color:#26a69a;">Trapézio</a></li>
+                                                                                              <li><a href="#losango" onclick="$('.button-collapse').sideNav('hide');" style="color:#26a69a;">Losango</a></li>
+                                                                                          </ul>
+                                                                                      </div>
+                                                                                  </li>
+                                                                              </ul>
+                                                                           </li> 
+                                                                                
+
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                           </li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li><a href="#5ladosOuMais" onclick="$('.button-collapse').sideNav('hide');" style="color:#26a69a;">5 lados ou mais</a></li>
+
+
+                                               </ul>
+                                           </div>
+                                         </li>
+                                      </ul>
+                                   </li>
+
+                                   <li class="no-padding" style="border:solid 0px;">
+                                      <ul class="collapsible collapsible-accordion">
+                                          <li>
+                                              <a class="collapsible-header" style="color:#484444;">Área Lateral<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                              <div class="collapsible-body">
+                                                  <ul>
+                                                      <li><a href="#faceLateralRetaPrisma" onclick="$('.button-collapse').sideNav('hide');" style="color:#26a69a;">Face Lateral Reta</a></li>
+                                                      <li>
+
+                                                          <li class="no-padding" style="border:solid 0px;">
+                                                              <ul class="collapsible collapsible-accordion">
+                                                                  <li>
+                                                                      <a class="collapsible-header" style="color:#26a69a;">Face lateral oblíqua<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                                                      <div class="collapsible-body">
+                                                                          <ul>
+                                                                              <li><a href="#faceLateralObliquaComBaseEAlturaPrisma" onclick="$('.button-collapse').sideNav('hide');" style="color:#26a69a;">Aresta da Base e Altura</a></li>
+                                                                              <li><a href="#faceLateralObliquaArestaBaseELateralEAnguloPrisma" onclick="$('.button-collapse').sideNav('hide');" style="color:#26a69a;">Base, Lateral e ângulo </a> </li>
+                                                                          </ul>
+                                                                      </div>
+                                                                  </li>
+                                                              </ul>
+                                                          </li> 
+
+                                                      </li>
+          
+                                                  </ul>
+                                              </div>
+                                           </li>
+                                      </ul>
+                                   </li> 
+
+                                   <li class="no-padding" style="border:solid 0px;">
+                                       <ul class="collapsible collapsible-accordion">
+                                           <li>
+                                               <a class="collapsible-header" style="color:#484444;">Volume<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                               <div class="collapsible-body">
+                                                    <ul>
+                                                       <li><a href="#volumePrismaRegular" onclick="$('.button-collapse').sideNav('hide');" style="color:#26a69a;">Regular</a></li>
+                                                        <li><a href="#volumePrismaIrregular" onclick="$('.button-collapse').sideNav('hide');" style="color:#26a69a;">Irregular </a></li>
+                                                    </ul>
+                                               </div>
+                                           </li>
+                                        </ul>
+                                   </li> 
+
+
+
+
+                                  </li>                                            
+                              </ul>
+                          </div>
+                        </li>
+                    </ul>
+                 </li>
+                         
+                         <li class="no-padding" style="border:solid 0px;">
+                             <ul class="collapsible collapsible-accordion">
+                                <li>
+                                   <a class="collapsible-header" style="color:#26a69a;">Cilindro<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                    <div class="collapsible-body">
+                                       <ul>
+                                         <li><a href="#areaBaseCilindro" onclick="$('.button-collapse').sideNav('hide');" style="color:#484444;">Área da Base</a></li>
+                                         <li>
+                                         
+                                             <li class="no-padding" style="border:solid 0px;">
+                                                 <ul class="collapsible collapsible-accordion">
+                                                    <li>
+                                                       <a class="collapsible-header" style="color:#484444;">Área Lateral<i class="mdi-navigation-arrow-drop-down"></i></a>
+                                                       <div class="collapsible-body">
+                                                          <ul>
+                                                             <li><a href="#areaLateralCilindroReto" onclick="$('.button-collapse').sideNav('hide');" style="color:#26a69a;">Cilindro Reto</a></li>
+                                                             <li><a href="#volumePrismaIrregular" onclick="$('.button-collapse').sideNav('hide');" style="color:#26a69a;">Cilindro Oblíquo </a></li>
+                                                          </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li> 
+
+                                         </li>
+                                        </ul>
+                                   </div>
+                                </li>
+                            </ul>
+                        </li> 
+
+
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    <li><a href="#!">Sobre</a></li>
+     
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse show-on-large" ><i class="mdi-navigation-menu"></i></a>
+   <div class="content" > 
+      <p style="text-decoration:none; font-weight: bold; font-size:150%;"  class="brand-logo">Geometria Espacial</p>
+      <a href="#" style="float:right; text-decoration:none; margin-right:2%;" > <img src="font/material-design-icons/refresh.svg" onclick="location.reload()"> </a>
+     
+  </div>
+  
+</nav>
+
+
+<div class="content" id="divDinamica">
+       <ng-view></ng-view>
+</div>
+ 
+        <!-- Links Agular -->
+        <script src='bower_components/angular/angular.min.js'></script>
+        <script src='bower_components/angular-route/angular-route.min.js'></script>
+        <script src="bower_components/fastclick/lib/fastclick.js"></script>
+        <script src='js/app.js'></script>
+        <!-- End Links Agular -->
+
+
+        <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+
+        <script type="text/javascript" >     
+           $(".button-collapse").sideNav({menuWidth: 245});        
+        </script>
+         
+    </body>
+</html>

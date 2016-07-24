@@ -1,0 +1,37 @@
+<br>
+<h5 class="header center" id="titulo">Área do Paralelogramo</h5>
+<div class="content" id="texto">
+  
+        <form name="calcform" method="post" action="">
+           <fieldset>
+                
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Aresta da base 1" name="ArestadaBase" id="ArestadaBase" class="validate" min="1" step="0.01" />
+                            <label for="ArestadaBase">Aresta da base 1 :</label>
+                         </div>
+                </div>
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Aresta da base 2" name="ArestadaBase2" id="ArestadaBase2" class="validate" min="1" step="0.01"/>
+                            <label for="ArestadaBase2">Aresta da base 2:</label>
+                         </div>
+                </div>
+
+              <label for="res">Resultado:</label>
+              <input  type="text" name="res" id="res" />
+
+              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalPrismaParalelogramo(document.calcform.value)">Calcular</a>
+              <input type="reset" id="botao" class="waves-effect waves-light btn" value="Limpar" />
+                
+           </fieldset>  
+        </form>   
+        <h5 class="header center" id="titulo">Ver a área tambem de :</h5>
+
+         <a id="butoonEstilo"  class="waves-effect waves-teal btn-flat" href="#losango">Losango</a>
+         <a  id="butoonEstilo" class="waves-effect waves-teal btn-flat" href="#trapezio">Trapézio</a>
+
+</div>
+
+
+  

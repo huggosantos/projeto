@@ -1,0 +1,25 @@
+<br>
+<h5 class="header center" id="titulo">Área do Prisma de 3 Lados Regular</h5>
+<div class="content" id="texto">
+  
+        <form name="calcform2" method="post" action="">
+           <fieldset>
+                
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Aresta da base" name="ArestadaBase" id="ArestadaBase" class="validate" min="1" step="0.01"/>
+                            <label for="ArestadaBase">Aresta da base:</label>
+                         </div>
+                </div>
+
+              <label for="res">Resultado:</label>
+              <input  type="text" name="res" id="res" />
+
+              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalPrisma3LadoRegular(document.calcform2.value)">Calcular</a>
+              <a id="botao" class="waves-effect waves-light btn" value="Limpar" onClick="location.reload();">Limpar</a>
+           </fieldset>  
+        </form>                   
+</div>
+
+
+  

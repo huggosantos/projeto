@@ -1,0 +1,44 @@
+<br>
+<h5 class="header center" id="titulo">Área Lateral Prisma </h5>
+<p class="text" id="texto2">Face Lateral OBLÍQUA com Aresta da base e Altura</p>
+<div class="content" id="texto">
+  
+        <form name="calcform" method="post" action="">
+           <fieldset>
+                
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Número de lados:" name="numLados" id="numLados" class="validate" min="1" step="0.01" />
+                            <label for="numLados">Número de lados:</label>
+                         </div>
+                </div>
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Aresta Base:" name="arestaBase" id="arestaBase" class="validate" min="1" step="0.01"/>
+                            <label for="arestaBase">Aresta Base:</label>
+                         </div>
+                </div>
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Altura:" name="altura" id="altura" class="validate" min="1" step="0.01"/>
+                            <label for="altura">Altura:</label>
+                         </div>
+                </div>
+
+              <label for="res">Resultado:</label>
+              <input  type="text" name="res" id="res" />
+
+              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalPrismaAreaLateralObliquaArestaBaseEAltura(document.calcform.value)">Calcular</a>
+              <input type="reset" id="botao" class="waves-effect waves-light btn" value="Limpar" />
+                
+           </fieldset>  
+        </form>   
+        <h5 class="header center" id="titulo">Ver a área Lateral :</h5>
+
+         <a id="butoonEstilo"  class="waves-effect waves-teal btn-flat" href="#faceLateralRetaPrisma" onclick="toTop();">Face Lateral Reta</a>
+         <a  id="butoonEstilo" class="waves-effect waves-teal btn-flat" href="#faceLateralObliquaArestaBaseELateralEAnguloPrisma" onclick="toTop();">Aresta da Base, lateral e ângulo</a>
+
+</div>
+
+
+  

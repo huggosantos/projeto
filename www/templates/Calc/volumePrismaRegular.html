@@ -1,0 +1,37 @@
+<br>
+<h5 class="header center" id="titulo">Volume Prisma Regular</h5>
+<div class="content" id="texto">
+  
+        <form name="calcform" method="post" action="">
+           <fieldset>
+                
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Área da Base" name="areaBase" id="areaBase" class="validate" min="1" step="0.01" />
+                            <label for="areaBase">Área da Base:</label>
+                         </div>
+                </div>
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Altura:" name="altura" id="altura" class="validate" min="1" step="0.01"/>
+                            <label for="altura">Altura:</label>
+                         </div>
+                </div>
+
+              <label for="res">Resultado:</label>
+              <input  type="text" name="res" id="res" />
+
+              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalPrismaRegularVolume(document.calcform.value)">Calcular</a>
+              <input type="reset" id="botao" class="waves-effect waves-light btn" value="Limpar" />
+                
+           </fieldset>  
+        </form>   
+        <h5 class="header center" id="titulo">Calcular Volume :</h5>
+
+         <a id="butoonEstilo"  class="waves-effect waves-teal btn-flat" href="#volumePrismaIrregular" onclick="toTop();">Volume Prisma Irregular</a>
+        
+
+</div>
+
+
+  

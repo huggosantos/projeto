@@ -1,0 +1,37 @@
+<br>
+<h5 class="header center" id="titulo">Área do Losango</h5>
+<div class="content" id="texto">
+  
+        <form name="calcform" method="post" action="">
+           <fieldset>
+                
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Diagonal Menor" name="diagonalMenor" id="diagonalMenor" class="validate" min="1" step="0.01" />
+                            <label for="diagonalMenor">Diagonal Menor:</label>
+                         </div>
+                </div>
+                <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Diagonal Maior" name="diagonalMaior" id="diagonalMaior" class="validate" min="1" step="0.01"/>
+                            <label for="diagonalMaior">Diagonal Maior:</label>
+                         </div>
+                </div>
+
+              <label for="res">Resultado:</label>
+              <input  type="text" name="res" id="res" />
+
+              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalPrismaLosango(document.calcform.value)">Calcular</a>
+              <input type="reset" id="botao" class="waves-effect waves-light btn" value="Limpar" />
+                
+           </fieldset>  
+        </form>   
+        <h5 class="header center" id="titulo">Ver a área tambem de :</h5>
+
+         <a id="butoonEstilo"  class="waves-effect waves-teal btn-flat" href="#trapezio ">Trápézio</a>
+         <a  id="butoonEstilo" class="waves-effect waves-teal btn-flat" href="#Paralelogramo">Paralelogramo</a>
+
+</div>
+
+
+  
