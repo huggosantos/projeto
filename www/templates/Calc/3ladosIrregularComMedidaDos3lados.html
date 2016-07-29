@@ -27,10 +27,33 @@
               <label for="res">Resultado:</label>
               <input  type="text" name="res" id="res" />
 
-              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalPrismaIrregularComMedidaDos3lados(document.calcform.value)">Calcular</a>
+              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalPrismaIrregularComMedidaDos3lados(document.calcform.value)">Calcular <img src="font/material-design-icons/send.svg"></a>
               <a id="botao" class="waves-effect waves-light btn" value="Limpar" onClick="location.reload();">Limpar</a>              
            </fieldset>  
-        </form> 	            		
+        </form> 	
+         <h5 class="header center" id="titulo">Calcular área da base também de: </h5>
+
+      <table class="bordered">
+
+        <tbody>
+          <tr>
+            <td> Prisma Regular/td>
+            <td> <a href="#3ladosRegular"  onclick="toTop();" class="waves-effect waves-circle waves-light btn-floating secondary-content"> <img src="font/material-design-icons/send.svg"></a>
+            </td>
+          </tr>
+          <tr>
+            <td> Prisma irregular com base e altura</td>
+            <td> <a href="#PrismaIrregularBaseEAltura"  onclick="toTop();" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+           <img src="font/material-design-icons/send.svg"></a></td>       
+          </tr>
+           <tr>
+            <td> Prisma irregular 2 lados e ângulo de inclinação</td>
+            <td> <a href="#PrismaInrregularComAnguloEntre"  onclick="toTop();" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+           <img src="font/material-design-icons/send.svg"></a></td>
+            
+          </tr>
+        </tbody>
+      </table>                 		
 </div>
 
 

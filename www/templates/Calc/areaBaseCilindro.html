@@ -1,8 +1,11 @@
 <br>
 <h5 class="header center" id="titulo">Área da Base Cilindro</h5>
 <div class="content" id="texto">
+
+ 
   
         <form name="calcform" method="post" action="">
+
            <fieldset>
                 
                 <div class="row">
@@ -16,17 +19,32 @@
               <label for="res">Resultado:</label>
               <input  type="text" name="res" id="res" />
 
-              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalCilindroAreaBase(document.calcform.value)">Calcular</a>
+              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalCilindroAreaBase(document.calcform.value)">Calcular <img src="font/material-design-icons/send.svg"></a>
               <input type="reset" id="botao" class="waves-effect waves-light btn" value="Limpar" />
                 
            </fieldset>  
         </form>   
-        <h5 class="header center" id="titulo">Cilindro :</h5>
+      <h5 class="header center" id="titulo">Calcular também : </h5>
 
-         <a id="butoonEstilo"  class="waves-effect waves-teal btn-flat" href="#areaLateralCilindroObliquo" onclick="toTop();">Árera da Lateral Oblíquo</a>
-         <a id="butoonEstilo"  class="waves-effect waves-teal btn-flat" href="#areaLateralCilindroReto" onclick="toTop();">Árera da Lateral Reto</a>
-        
+      <table class="bordered">
 
+        <tbody>
+          <tr>
+            <td> Árera Lateral clindro Oblíquo</td>
+            <td> <a href="#areaLateralCilindroObliquo"  onclick="toTop();" class="waves-effect waves-circle waves-light btn-floating secondary-content"> <img src="font/material-design-icons/send.svg"></a>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>Árera Lateral clindro Reto</td>
+            <td> <a href="#areaLateralCilindroReto"  onclick="toTop();" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+           <img src="font/material-design-icons/send.svg"></a></td>
+            
+          </tr>
+        </tbody>
+      </table>
+            
+  
 </div>
 
 

@@ -21,15 +21,25 @@
               <label for="res">Resultado:</label>
               <input  type="text" name="res" id="res" />
 
-              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalPrismaRegularVolume(document.calcform.value)">Calcular</a>
+              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalPrismaRegularVolume(document.calcform.value)">Calcular <img src="font/material-design-icons/send.svg"></a>
               <input type="reset" id="botao" class="waves-effect waves-light btn" value="Limpar" />
                 
            </fieldset>  
         </form>   
-        <h5 class="header center" id="titulo">Calcular Volume :</h5>
+        <h5 class="header center" id="titulo">Calcular volume de: </h5>
 
-         <a id="butoonEstilo"  class="waves-effect waves-teal btn-flat" href="#volumePrismaIrregular" onclick="toTop();">Volume Prisma Irregular</a>
-        
+      <table class="bordered">
+
+        <tbody>
+          <tr>
+            <td> Volume Prisma Irregular</td>
+            <td> <a href="#volumePrismaIrregular"  onclick="toTop();" class="waves-effect waves-circle waves-light btn-floating secondary-content"> <img src="font/material-design-icons/send.svg"></a>
+            </td>
+            
+          </tr>
+        </tbody>
+      </table>
+       
 
 </div>
 

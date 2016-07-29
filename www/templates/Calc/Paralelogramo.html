@@ -21,15 +21,34 @@
               <label for="res">Resultado:</label>
               <input  type="text" name="res" id="res" />
 
-              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalPrismaParalelogramo(document.calcform.value)">Calcular</a>
+              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalPrismaParalelogramo(document.calcform.value)">Calcular <img src="font/material-design-icons/send.svg"></a>
               <input type="reset" id="botao" class="waves-effect waves-light btn" value="Limpar" />
                 
            </fieldset>  
         </form>   
-        <h5 class="header center" id="titulo">Ver a área tambem de :</h5>
+       <h5 class="header center" id="titulo">Calcular área da base também de: </h5>
 
-         <a id="butoonEstilo"  class="waves-effect waves-teal btn-flat" href="#losango">Losango</a>
-         <a  id="butoonEstilo" class="waves-effect waves-teal btn-flat" href="#trapezio">Trapézio</a>
+      <table class="bordered">
+
+        <tbody>
+          <tr>
+            <td>Prisma 4 lados regular</td>
+            <td> <a href="#4ladosRegularPrisma"  onclick="toTop();" class="waves-effect waves-circle waves-light btn-floating secondary-content"> <img src="font/material-design-icons/send.svg"></a>
+            </td>
+          </tr>
+          <tr>
+            <td> Trapézio</td>
+            <td> <a href="#trapezio"  onclick="toTop();" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+           <img src="font/material-design-icons/send.svg"></a></td>       
+          </tr>
+           <tr>
+            <td> Losango</td>
+            <td> <a href="#losango"  onclick="toTop();" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+           <img src="font/material-design-icons/send.svg"></a></td>
+            
+          </tr>
+        </tbody>
+      </table>             
 
 </div>
 

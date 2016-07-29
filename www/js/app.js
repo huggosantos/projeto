@@ -1,169 +1,3 @@
-var app = angular.module('myApp', ['ngRoute']).config(
-    function($routeProvider) {
-        /*ROTAS*/
-        $routeProvider
-            .when('/cad', {
-                templateUrl: 'templates/cad.html',
-                controller: 'cad'
-            })
-            .when('/RelaEuler', {
-                templateUrl: 'templates/RelaEuler.html',
-                controller: 'RelaEuler'
-            })
-            .when('/poliedrosPlatao', {
-                templateUrl: 'templates/poliedrosDePlatao.html',
-                controller: 'poliedrosPlatao'
-            })
-            .when('/poliedrosRegulares', {
-                templateUrl: 'templates/poliedrosRegulares.html',
-                controller: 'poliedrosRegulares'
-            })
-            .when('/prisma', {
-                templateUrl: 'templates/prisma.html',
-                controller: 'prisma'
-            })
-             .when('/Paralelepipedo', {
-                templateUrl: 'templates/Paralelepipedo.html',
-                controller: 'Paralelepipedo'
-            })
-             .when('/cubo', {
-                templateUrl: 'templates/cubo.html',
-                controller: 'cubo'
-            })
-             .when('/piramide', {
-                templateUrl: 'templates/piramide.html',
-                controller: 'piramide'
-            })
-             .when('/cilindro', {
-                templateUrl: 'templates/cilindro.html',
-                controller: 'cilindro'
-            })
-             .when('/cone', {
-                templateUrl: 'templates/cone.html',
-                controller: 'cone'
-            })
-              .when('/5ladosOuMais', {
-                templateUrl: 'templates/Calc/5ladosOuMais.html',
-                controller: '5ladosOuMais'
-            })
-             .when('/3ladosRegular', {
-                templateUrl: 'templates/Calc/3ladosRegular.html',
-                controller: '3ladosRegular'
-            })
-              .when('/3ladosIrregularComMedidaDos3lados', {
-                templateUrl: 'templates/Calc/3ladosIrregularComMedidaDos3lados.html',
-                controller: '3ladosIrregularComMedidaDos3lados'
-            })
-              .when('/PrismaInrregularComAnguloEntre', {
-                templateUrl: 'templates/Calc/PrismaInrregularComAnguloEntre.html',
-                controller: 'PrismaInrregularComAnguloEntre'
-            })
-              .when('/PrismaIrregularBaseEAltura', {
-                templateUrl: 'templates/Calc/PrismaIrregularBaseEAltura.html',
-                controller: 'PrismaIrregularBaseEAltura'
-            })
-              .when('/4ladosRegularPrisma', {
-               templateUrl: 'templates/Calc/4ladosRegularPrisma.html',
-               controller: '4ladosRegularPrisma'
-            })
-              .when('/Paralelogramo', {
-               templateUrl: 'templates/Calc/Paralelogramo.html',
-               controller: 'Paralelogramo'
-            })
-               .when('/trapezio', {
-               templateUrl: 'templates/Calc/trapezio.html',
-               controller: 'trapezio'
-            })
-               .when('/losango', {
-               templateUrl: 'templates/Calc/losango.html',
-               controller: 'losango'
-            })
-               .when('/faceLateralRetaPrisma', {
-               templateUrl: 'templates/Calc/faceLateralRetaPrisma.html',
-               controller: 'faceLateralRetaPrisma'
-            })
-               .when('/faceLateralObliquaComBaseEAlturaPrisma', {
-               templateUrl: 'templates/Calc/faceLateralObliquaComBaseEAlturaPrisma.html',
-               controller: 'faceLateralObliquaComBaseEAlturaPrisma'
-            })
-               .when('/faceLateralObliquaArestaBaseELateralEAnguloPrisma', {
-               templateUrl: 'templates/Calc/faceLateralObliquaArestaBaseELateralEAnguloPrisma.html',
-               controller: 'faceLateralObliquaArestaBaseELateralEAnguloPrisma'
-            })
-               .when('/volumePrismaRegular', {
-               templateUrl: 'templates/Calc/volumePrismaRegular.html',
-               controller: 'volumePrismaRegular'
-            })
-               .when('/volumePrismaIrregular', {
-               templateUrl: 'templates/Calc/volumePrismaIrregular.html',
-               controller: 'volumePrismaIrregular'
-            })
-               .when('/areaBaseCilindro', {
-               templateUrl: 'templates/Calc/areaBaseCilindro.html',
-               controller: 'areaBaseCilindro'
-            })
-               .when('/areaLateralCilindroReto', {
-               templateUrl: 'templates/Calc/areaLateralCilindroReto.html',
-               controller: 'areaLateralCilindroReto'
-            })
-               .when('/areaLateralCilindroObliquo', {
-               templateUrl: 'templates/Calc/areaLateralCilindroObliquo.html',
-               controller: 'areaLateralCilindroObliquo'
-            });
-        }).run(function() {
-    //remove 300ms delay touch
-    FastClick.attach(document.body);
-});
-
- 
-
-
-
- app.controller('cad', function($scope, $routeParams, cad) {
-    $scope.cad = {};
-    //factory obter agenda
-    cad.getAgenda(function(data) {
-        $scope.cad = data;
-    });
-    
-    });
-
- /*FACTORYS*/
-app.factory('cad', function($http) {
-    var agendaList;
-    var obj = {};
-
-    obj = {
-        getAgenda: function(callback) {
-            //se já tiver os dados retornar
-            if (agendaList) {
-                callback(agendaList);
-                return false;
-            } else {
-                
-                $http({
-                    method: 'GET',
-                    url: 'data/agenda.json'
-                }).success(function(data) {
-                    // erros
-                    obj.saveAgenda(data);
-                    callback(data);
-
-                }).
-                error(function() {
-                    //error
-                });
-            }
-        },
-        saveAgenda: function(data) {
-            agendaList = data;
-        }
-    }
-
-    return obj;
-})
-
-
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -435,6 +269,23 @@ function CalPrismaIrregularVolume(){
                       document.calcform.res.value = volume;
                       }
                 } 
+// Area Total prisma
+function CalPrismaAreaTotal(){
+                   var areaBase = document.calcform.areaBase.value;
+                   var AreaLateral = document.calcform.AreaLateral.value;        
+                   var areaTotal = areaBase * AreaLateral;
+  
+
+                     if((isNumber(areaBase)==false) || (isNumber(AreaLateral)==false) ){
+                        Materialize.toast('Informe somente números!', 4000)
+                     }else if ((areaBase<=0) || (AreaLateral<=0)){
+                        Materialize.toast('Informe um número maior que zero!', 4000)
+                     }else{
+                      document.calcform.res.value = areaTotal;
+                      }
+                } 
+
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 // ------------------------------------------------CILINDRO------------------------------------------------------------------------------------------
@@ -482,5 +333,65 @@ function CalCilindroAreaLateralObliquo(){
                         Materialize.toast('Informe um número maior que zero!', 4000)
                      }else{
                       document.calcform.res.value = AreaLateral;
+                      }
+                } 
+// volume do cilindro Reto
+function CalCilindroRetoVolume(){
+                   var areaBase = document.calcform.areaBase.value;
+                   var altura = document.calcform.altura.value;
+                   var volume = areaBase * altura;
+
+                    if((isNumber(areaBase)==false) || (isNumber(altura)==false) ){
+                        Materialize.toast('Informe somente números!', 4000)
+                     }else if ((areaBase<=0) || (altura<=0)){
+                        Materialize.toast('Informe um número maior que zero!', 4000)
+                     }else{
+                      document.calcform.res.value = volume;
+                      }
+                } 
+// volume do cilindro obliquo possue a altura
+function CalCilindroObliquoVolume(){
+                   var areaBase = document.calcform.areaBase.value;
+                   var altura = document.calcform.altura.value;
+                   var volume = areaBase * altura;
+
+                    if((isNumber(areaBase)==false) || (isNumber(altura)==false) ){
+                        Materialize.toast('Informe somente números!', 4000)
+                     }else if ((areaBase<=0) || (altura<=0)){
+                        Materialize.toast('Informe um número maior que zero!', 4000)
+                     }else{
+                      document.calcform.res.value = volume;
+                      }
+                } 
+// volume do cilindro obliquo não possue a altura
+function CalCilindroObliquoVolumeNaoPossueAltura(){
+                   var areaBase = document.calcform.areaBase.value;
+                   var angulo = document.calcform.angulo.value;
+                   var geratriz = document.calcform.geratriz.value;
+                   var h = Math.sin(angulo) * geratriz;
+                   var volume = areaBase * h;
+
+                    if((isNumber(areaBase)==false) || (isNumber(angulo)==false) || (isNumber(geratriz)==false)  ){
+                        Materialize.toast('Informe somente números!', 4000)
+                     }else if ((areaBase<=0) || (angulo<=0) || (geratriz<=0)){
+                        Materialize.toast('Informe um número maior que zero!', 4000)
+                     }else{
+                      document.calcform.res.value = volume;
+                      }
+                } 
+
+// Area Total cilindro
+function CalCilindroAreaTotal(){
+                   var areaBase = document.calcform.areaBase.value;
+                   var AreaLateral = document.calcform.AreaLateral.value;        
+                   var areaTotal = areaBase * AreaLateral;
+  
+
+                     if((isNumber(areaBase)==false) || (isNumber(AreaLateral)==false) ){
+                        Materialize.toast('Informe somente números!', 4000)
+                     }else if ((areaBase<=0) || (AreaLateral<=0)){
+                        Materialize.toast('Informe um número maior que zero!', 4000)
+                     }else{
+                      document.calcform.res.value = areaTotal;
                       }
                 } 

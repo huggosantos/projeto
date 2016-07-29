@@ -1,5 +1,5 @@
 <br>
-<h5 class="header center" id="titulo">Área do Prisma com valor de 2 lados e angulo entre eles</h5>
+<h5 class="header center" id="titulo">Área do Prisma com valor de 2 lados e ângulo entre eles</h5>
 <div class="content" id="texto">
   
         <form name="calcform" method="post" action="">
@@ -19,18 +19,40 @@
                 </div>
                 <div class="row">
                         <div class="input-field col s6">
-                            <input type="number" placeholder="angulo" name="angulo" id="angulo" class="validate" min="1" step="0.01"/>
-                            <label for="angulo">Angulo</label>
+                            <input type="number" placeholder="Ângulo" name="angulo" id="angulo" class="validate" min="1" step="0.01"/>
+                            <label for="angulo">Ângulo</label>
                          </div>
                 </div>
 
               <label for="res">Resultado:</label>
               <input  type="text" name="res" id="res" />
 
-              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalPrisma2ladosAgulo(document.calcform.value)">Calcular</a>
+              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalPrisma2ladosAgulo(document.calcform.value)">Calcular <img src="font/material-design-icons/send.svg"></a>
               <a id="botao" class="waves-effect waves-light btn" value="Limpar" onClick="location.reload();">Limpar</a>
            </fieldset>  
-        </form>                   
+        </form>  
+        <h5 class="header center" id="titulo">Calcular área da base também de: </h5>
+
+      <table class="bordered">
+
+        <tbody>
+          <tr>
+            <td> Prisma Regular</td>
+            <td> <a href="#3ladosRegular" onclick="toTop();" class="waves-effect waves-circle waves-light btn-floating secondary-content"> <img src="font/material-design-icons/send.svg"></a>
+            </td>
+          </tr>
+          <tr>
+            <td> Prisma irregular com medida dos 3 lados</td>
+            <td> <a href="#3ladosIrregularComMedidaDos3lados"  onclick="toTop();" class="waves-effect waves-circle waves-light btn-floating secondary-content"> <img src="font/material-design-icons/send.svg"></a>
+            </td>
+          </tr>
+           <tr>
+            <td> Prisma irregular com base e altura</td>
+            <td> <a href="#PrismaIrregularBaseEAltura"  onclick="toTop();" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+            <img src="font/material-design-icons/send.svg"></a></td>       
+          </tr>
+        </tbody>
+      </table>                     
 </div>
 
 

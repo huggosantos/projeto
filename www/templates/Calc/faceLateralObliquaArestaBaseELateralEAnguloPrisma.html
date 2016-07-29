@@ -34,15 +34,30 @@
               <label for="res">Resultado:</label>
               <input  type="text" name="res" id="res" />
 
-              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalPrismaAreaLateralObliquaArestaBaseELateralEAngulo(document.calcform.value)">Calcular</a>
+              <a id="botao" class="waves-effect waves-light btn" value="Resultado" onClick="CalPrismaAreaLateralObliquaArestaBaseELateralEAngulo(document.calcform.value)">Calcular <img src="font/material-design-icons/send.svg"></a>
               <input type="reset" id="botao" class="waves-effect waves-light btn" value="Limpar" />
                 
            </fieldset>  
         </form>   
-        <h5 class="header center" id="titulo">Ver a área Lateral :</h5>
 
-         <a id="butoonEstilo"  class="waves-effect waves-teal btn-flat" href="#faceLateralObliquaComBaseEAlturaPrisma " onclick="toTop();">Oblíqua com Aresta base e altura</a>
-         <a id="butoonEstilo"  class="waves-effect waves-teal btn-flat" href="#faceLateralRetaPrisma " onclick="toTop();">Face Lateral Reta</a>
+         <h5 class="header center" id="titulo">Calcular área da lateral de : </h5>
+         <table class="bordered">
+
+        <tbody>
+          <tr>
+            <td> Face Lateral com Aresta base e altura</td>
+            <td> <a href="#faceLateralObliquaComBaseEAlturaPrisma"  onclick="toTop();" class="waves-effect waves-circle waves-light btn-floating secondary-content"> <img src="font/material-design-icons/send.svg"></a>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>Face Lateral Reta</td>
+            <td> <a href="#faceLateralRetaPrisma"  onclick="toTop();" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+           <img src="font/material-design-icons/send.svg"></a></td>
+            
+          </tr>
+        </tbody>
+      </table>
 
 </div>
 

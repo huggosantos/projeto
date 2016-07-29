@@ -71,8 +71,22 @@ body{
 
 #butoonEstilo{
 	text-decoration:none;
+	font-weight: bolder;
 }
 
 #butoonEstilo a:hover {
 	color:#26a69a;
+
 }
+
+.listFast li{
+	margin-top: 5%;
+
+}
+
+#imagens{
+	margin-left: 3%;
+    width: 20%;
+	height: 20%;
+	background-color: #F6A2AD;
+}  
