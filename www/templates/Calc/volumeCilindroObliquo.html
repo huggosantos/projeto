@@ -1,17 +1,26 @@
 <br>
-<h5 class="header center" id="titulo">Área da Lateral Cilindro Oblíquo</h5>
+<h5 class="header center" id="titulo">Volume Cilindro Oblíquo</h5>
 <div class="content" id="texto">
+
+ 
   
         <form name="calcform" method="post" action="">
+
            <fieldset>
                 
                 <div class="row">
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Área da Base:" name="areaBase" id="areaBase" class="validate" min="1" step="0.01" />
+                            <label for="areaBase">Área da Base:</label>
+                         </div>
+                </div>
+                 <div class="row">
                         <div class="input-field col s6">
                             <input type="number" placeholder="Ângulo:" name="angulo" id="angulo" class="validate" min="1" step="0.01" />
                             <label for="angulo">Ângulo:</label>
                          </div>
                 </div>
-                 <div class="row">
+                <div class="row">
                         <div class="input-field col s6">
                             <input type="number" placeholder="Geratriz:" name="geratriz" id="geratriz" class="validate" min="1" step="0.01" />
                             <label for="geratriz">Geratriz:</label>
@@ -22,34 +31,27 @@
               <label for="res">Resultado:</label>
               <input  type="text" name="res" id="res" />
 
-              <a id="botao" class="btn waves-effect waves-teal" value="Resultado" onClick="CalCilindroAreaLateralObliquo(document.calcform.value)">Calcular <img src="font/material-design-icons/send.svg"></a>
+              <a id="botao" class="btn waves-effect waves-teal" value="Resultado" onClick="CalCilindroObliquoVolumeNaoPossueAltura(document.calcform.value)">Calcular <img src="font/material-design-icons/send.svg"></a>
               <input type="reset" id="botao" class="waves-effect waves-light btn" value="Limpar" />
                 
            </fieldset>  
         </form>   
-          <h5 class="header center" id="titulo">Calcular também : </h5>
+      <h5 class="header center" id="titulo">Calcular também : </h5>
 
-          <table class="bordered">
+      <table class="bordered">
 
         <tbody>
           <tr>
-            <td>Árera Lateral cilindro Reto</td>
-            <td> <a href="#areaLateralCilindroReto"  onclick="toTop();" class="waves-effect waves-circle waves-light btn-floating secondary-content">
-            <i class="material-icons">send</i></td>
-            
-          </tr>
-          <tr>
-            <td>Árera da Base cilindro</td>
-            <td> <a href="#areaBaseCilindro"  onclick="toTop();" class="waves-effect waves-circle waves-light btn-floating secondary-content">
-            <i class="material-icons">send</i></td>
+            <td>Volume clindro Reto</td>
+            <td> <a href="#volumeCilindroReto"  onclick="toTop();" class="waves-effect waves-circle waves-light btn-floating secondary-content"> <img src="font/material-design-icons/send.svg"></a>
+            </td>
             
           </tr>
         </tbody>
       </table>
-        
-
+            
+  
 </div>
 
 
-  
   

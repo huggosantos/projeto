@@ -395,3 +395,4 @@ function CalCilindroAreaTotal(){
                       document.calcform.res.value = areaTotal;
                       }
                 } 
+                

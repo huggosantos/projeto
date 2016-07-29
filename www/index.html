@@ -179,13 +179,13 @@
           </li>
         </ul>
       </li>
-    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#sobre" onclick="$('.button-collapse').sideNav('hide');">Sobre</a></li>
      
   </ul>
   <a href="#" data-activates="slide-out" class="button-collapse show-on-large" ><i class="mdi-navigation-menu"></i></a>
    <div class="content" > 
       <p style="text-decoration:none; font-weight: bold; font-size:150%;"  class="brand-logo">Geometria Espacial</p>
-      <a href="#" style="float:right; text-decoration:none; margin-right:2%;" > <img src="font/material-design-icons/home.svg" onclick="location.reload()"> </a>
+      <a href="#home" style="float:right; text-decoration:none; margin-right:2%;"> <img src="font/material-design-icons/home.svg"> </a>
      
   </div>
   
@@ -207,13 +207,16 @@
 
         <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
+         <script type="text/javascript" src="js/materialize.js"></script>
 
         <script type="text/javascript">
             app.initialize();
         </script>
 
         <script type="text/javascript" >     
-           $(".button-collapse").sideNav({menuWidth: 245});        
+           $(".button-collapse").sideNav({menuWidth: 245}); 
+        
+      
         </script>
          
     </body>
