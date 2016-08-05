@@ -2915,7 +2915,7 @@ ul.staggered-list li {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #ee6e73;
+  background-color: #9ccc65;
 }
 
 footer.page-footer .footer-copyright {
@@ -7426,7 +7426,6 @@ nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul 
 
 nav ul a:focus {
   color:#26c6da;
-  background-color: #EE6E73;
 }
 
 nav ul.left {
@@ -9819,21 +9818,17 @@ body{
 
 }
 
-.side-nav li:hover, .side-nav li.active {
-  background-color: #ffcdd2 ;
+.side-nav li:hover, li:focus, .side-nav li.active {
+  background-color: #c5e1a5 ;
 }
 
-.side-nav li:focus{
-  background-color:#ffcdd2 ;
-  border-top:solid 1px #26a69a ;
-  border-bottom:solid 1px #26a69a ;
-}
+
 .side-nav li:hover a{
-  color:#26a69a ;
+   text-decoration: none;
 }
 .side-nav a {
   text-decoration: none;
-  color: #26a69a ;
+  color: #000 ;
   display: block;
   font-size: 1rem;
   height: 64px;
@@ -9877,7 +9872,7 @@ body{
 
 .side-nav .collapsible-body li.active,
 .side-nav.fixed .collapsible-body li.active {
-  background-color: #ffcdd2;
+  background-color: #9ccc65;
 }
 
 .side-nav .collapsible-body li.active a,

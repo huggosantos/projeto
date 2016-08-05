@@ -14,7 +14,7 @@
         <!-->
       
       <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-       <link type="text/css" rel="stylesheet" href="css/estilo.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/estilo.css"  media="screen,projection"/>
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -38,13 +38,8 @@
             <a class="collapsible-header">Começando<i class="mdi-navigation-arrow-drop-down"></i></a>
             <div class="collapsible-body">
               <ul>
-                <li><a href="#cad" onclick="$('.button-collapse').sideNav('hide');">Poliedros</a></li>
-                <li><a href="#RelaEuler" onclick="$('.button-collapse').sideNav('hide');">Relação de Euler</a></li>
-                <li><a href="#poliedrosPlatao" onclick="$('.button-collapse').sideNav('hide');">Poliedros de Platão</a></li>
-                <li><a href="#poliedrosRegulares"  onclick="$('.button-collapse').sideNav('hide');">Poliedros Regulares</a></li>
+                <li><a href="#poliedros" onclick="$('.button-collapse').sideNav('hide');">Poliedros</a></li>
                 <li><a href="#prisma" onclick="$('.button-collapse').sideNav('hide');">Prisma</a></li>
-                <li><a href="#Paralelepipedo" onclick="$('.button-collapse').sideNav('hide');">Paralelepípedo</a></li>
-                <li><a href="#cubo" onclick="$('.button-collapse').sideNav('hide');">Cubo</a></li>
                 <li><a href="#piramide" onclick="$('.button-collapse').sideNav('hide');">Pirâmide</a></li>
                 <li><a href="#cilindro" onclick="$('.button-collapse').sideNav('hide');">Cilindro</a></li>
                 <li><a href="#cone" onclick="$('.button-collapse').sideNav('hide');">Cone</a></li>
@@ -185,7 +180,7 @@
   <a href="#" data-activates="slide-out" class="button-collapse show-on-large" ><i class="mdi-navigation-menu"></i></a>
    <div class="content" > 
       <p style="text-decoration:none; font-weight: bold; font-size:150%;"  class="brand-logo">Geometria Espacial</p>
-      <a href="#home" style="float:right; text-decoration:none; margin-right:2%;"> <img src="font/material-design-icons/home.svg"> </a>
+      <a href="#home" onclick="toTop(); $('.button-collapse').sideNav('hide');" style="float:right; text-decoration:none; margin-right:2%;"> <img src="font/material-design-icons/home.svg"> </a>
      
   </div>
   

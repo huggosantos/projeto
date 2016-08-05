@@ -2,9 +2,9 @@ var app = angular.module('myApp', ['ngRoute']).config(
     function($routeProvider) {
         /*ROTAS*/
         $routeProvider
-            .when('/cad', {
-                templateUrl: 'templates/cad.html',
-                controller: 'cad'
+            .when('/poliedros', {
+                templateUrl: 'templates/poliedros.html',
+                controller: 'poliedros'
             })
               .when('/sobre', {
                 templateUrl: 'templates/sobre.html',
